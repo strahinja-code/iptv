@@ -1,0 +1,402 @@
+:root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* IMPORT CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,700&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+#content-wrapper {
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+.page-wrapping {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.py {
+  padding: 3rem 0;
+}
+p {
+  line-height: 1.5;
+}
+/* HEADER */
+#content-wrapper:nth-child(1) {
+  background: #1d131e;
+}
+
+header {
+  width: 100%;
+  background-image: url(../images/iptv_hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+
+header p {
+  color: #fff;
+  font-weight: 20px;
+  font-weight: 600;
+}
+
+header .button {
+  width: 200px;
+  line-height: 1.5rem;
+  background: #b4415c;
+  color: #fff;
+  border: #b4415c solid 2px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+header .button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  color: #fff;
+}
+
+#navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#navigation .logo img {
+  max-width: 200px;
+  height: 80px;
+}
+
+.hamburger {
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+#navigation ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+#navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+#navigation ul li a:hover {
+  border-bottom: #b4415c solid 2px;
+}
+
+/* SECTION IPTV */
+.iptv-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: flex-start;
+  grid-gap: 2rem;
+}
+#iptv {
+  background: #1d131e;
+  color: #fff;
+}
+
+#iptv .iptv:first-child {
+  padding-left: 1rem;
+}
+#iptv .iptv:last-child {
+  padding-right: 1rem;
+}
+
+#iptv h2 {
+  margin-bottom: 0;
+}
+
+.iptv p {
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+/* SECTION INFO */
+
+#info {
+  text-align: center;
+  background: #b4415c;
+  color: #fff;
+}
+
+#info p {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* SECTION PRICE*/
+#price .page-wrapping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#price .tables {
+  background: #b4415c;
+  color: #fff;
+  border-radius: 10px;
+}
+
+#price .tables:nth-child(2) {
+  margin: 0 2rem;
+}
+
+#price .intro {
+  background: #1d131e;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#price .intro h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+#price .intro p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.info-table h2 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 800;
+}
+.info-table ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0;
+}
+.info-table ul li {
+  border-bottom: #fff solid 1px;
+  font-size: 14px;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.info-table ul i {
+  margin-right: 10px;
+}
+
+.info-table .button {
+  width: 80%;
+  margin: 2rem auto;
+  display: block;
+  line-height: 1.5rem;
+  background: #1d131e;
+  color: #fff;
+  border: #b4415c solid 2px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.info-table .button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* SECTION CHANNELS */
+#channels,
+#price {
+  background: #fff;
+}
+#channels .page-wrapping {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#channels .channel-group i {
+  font-size: 32px;
+  color: #b4415c;
+}
+
+#channels .channel-group h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#channels .channel-group p {
+  font-size: 16px;
+}
+/* SECTION ABOUT */
+#about {
+  background: url(../images/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about .about-text {
+  padding: 2rem;
+  color: #fff;
+}
+
+#about .about-text h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#about .about-text h2 {
+  font-size: 55px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+#about .about-text p {
+  font-size: 16px;
+}
+
+#about .advantage {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.advantage .icon i {
+  font-size: 50px;
+  color: #fff;
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.advantage h4 {
+  font-size: 21px;
+  color: #fff;
+  font-weight: 700;
+  padding-left: 1rem;
+}
+.advantage p {
+  font-size: 16px;
+  color: #fff;
+}
+#about .about-content {
+  margin-left: 2rem;
+}
+
+.advantage-text {
+  margin: 0.5rem 1rem;
+  padding: 0;
+}
+
+.advantage-text h4 {
+  margin-bottom: 0;
+}
+
+/* FOOTER */
+#footer {
+  background: #1d131e;
+  color: #fff;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-content a img {
+  max-width: 200px;
+  height: 80px;
+}
+
+.footer-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-content h3 {
+  font-size: 27px;
+  text-align: center;
+}
+
+.footer-content ul {
+  list-style-type: circle;
+  color: #b4415c;
+  text-align: left;
+}
+
+.footer-content ul li {
+  padding: 0.5rem;
+}
+
+.footer-content ul li a {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+}
+.footer-content i {
+  font-size: 21px;
+}
+.footer-content i a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  font-family: inherit;
+}
+#copyright {
+  text-align: center;
+  border-top: #b4415c solid 1px;
+}
+
+/*MEDIA QUERY*/

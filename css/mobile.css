@@ -1,0 +1,115 @@
+body {
+  width: 100%;
+}
+
+#navigation ul {
+  display: none;
+}
+#navigation ul li a:hover {
+  padding: 0;
+}
+#navigation ul li a {
+  font-size: 1rem;
+}
+
+.hamburger {
+  display: block;
+}
+
+.page-wrapping #navigation #navul.show {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.page-wrapping #navigation #navul.show li {
+  padding: 1rem 0;
+}
+
+.page-wrapping {
+  width: 100%;
+}
+
+.iptv-wrap {
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+
+#channels .page-wrapping {
+  grid-template-columns: 1fr 1fr;
+}
+
+#price .page-wrapping {
+  display: block;
+  width: 80%;
+}
+
+#price .tables {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+#price .tables:nth-child(2) {
+  margin: 0;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-wrapper {
+  display: block;
+  text-align: center;
+}
+
+.footer-content ul li {
+  text-align: center;
+}
+.footer-content {
+  margin-bottom: 2rem;
+}
+#copyright h4 {
+  font-size: 1rem;
+}
+#footer {
+  padding: 1rem 0;
+}
+.footer-content ul {
+  padding: 0;
+  list-style: none;
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 50%;
+  }
+
+  header {
+    height: 70vh;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  #iptv .iptv:first-child {
+    padding: 0;
+  }
+  #info {
+    padding: 1.5rem;
+  }
+  #channels .page-wrapping {
+    display: block;
+  }
+  #channels .channel-group {
+    padding-top: 1rem;
+  }
+  #about {
+    background-position: right right;
+  }
+  #about .about-content {
+    margin: 0;
+  }
+  #about .advantage {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
